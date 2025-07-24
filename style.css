@@ -15,6 +15,13 @@
     background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
     transition: width 1s ease-in-out;
 }
+@keyframes timelineGrow {
+  from { height: 0; }
+  to { height: 110%; }
+}
+.animate-timeline {
+  animation: timelineGrow 2s cubic-bezier(0.4,0,0.2,1) forwards;
+}
 .testimonial-card {
     transition: all 0.3s ease;
 }
